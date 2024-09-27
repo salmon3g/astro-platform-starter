@@ -36,6 +36,8 @@ The following HTML `<h2>`—`<h6>` elements represent five levels of section hea
 
 A standalone single paragraph of text.
 
+![bmZkMt](https://cn.ip7.ltd/2024/09/bmZkMt.png)
+
 Paragraphs can be multiline too when they constitute words that make up more than one line, i.e they wrap to the next line. Wow! I am really smart to write two lines of text that makes zero sense.
 
 ## Blockquotes

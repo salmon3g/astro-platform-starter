@@ -1,9 +1,7 @@
 ---
 title: 故鄉
-pubDate: 1921-01-10
-categories: ['魯迅']
-tags: ['名篇']
-description: ''
+pubDate: 2023-01-10
+tags: [名篇]
 ---
 
 我冒了嚴寒，回到相隔二千餘里，別了二十餘年的故鄉去。
