@@ -1,9 +1,7 @@
 ---
 title: "Basic markdown style guide"
-description: "You can author content using the familiar markdown syntax you already know. All basic markdown syntax is supported."
 pubDate: 2024-03-02
-tags: ['markdown','example']
-categories: ['tech']
+tags: ['markdown']
 ---
 
 Markdown is powered by [Markdoc](https://markdoc.dev/). This is an example post to demonstrate all the basic markdown syntax. You can author content using the familiar markdown syntax you already know.
@@ -36,7 +34,7 @@ The following HTML `<h2>`—`<h6>` elements represent five levels of section hea
 
 A standalone single paragraph of text.
 
-![bmZkMt](https://cn.ip7.ltd/2024/09/bmZkMt.png)
+![bmZkMt](https://cdn.pixabay.com/photo/2024/03/09/16/59/typewriter-8622984_1280.jpg)
 
 Paragraphs can be multiline too when they constitute words that make up more than one line, i.e they wrap to the next line. Wow! I am really smart to write two lines of text that makes zero sense.
 

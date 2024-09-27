@@ -1,6 +1,5 @@
 ---
 import '../styles/index.css'
-import Header from './HeaderPost.astro'
 import Footer from './FooterPost.astro'
 import { useLocale } from '@utils/locale'
 import {PandaConfig} from "../config.js";
@@ -25,7 +24,6 @@ const fullTitle = `${title} - ${defaultTitle}`
         <title>{fullTitle}</title>
     </head>
     <body class="max-width dark:bg-stone-700">
-        <Header />
         <main >
             <slot />
         </main>

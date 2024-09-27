@@ -140,7 +140,7 @@ a.animated.active:after {
     color: rgb(var(--color-primary-main));
     @apply mr-4 font-semibold;
 }
-.prose :where(h2):not(:where(.not-prose,.not-prose *)){font-size:1.5rem}
+.prose :where(h2):not(:where(.not-prose,.not-prose *)){font-size:1.375rem}
 .prose :where(h1,h2,h3,h4,h5,h6):not(:where(.not-prose,.not-prose *)){color:#374151}
 /*
 * footnotes
