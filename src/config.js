@@ -4,10 +4,10 @@ export const PandaConfig = {
     start: '2024',
     site: 'https://mypaper.vercel.app/',
     defaultLocale: 'en',
-    // navbar: [
+    navbar: [
         // {title: 'Posts', url: '/'}, // auto generated
-        // { title: 'about', url: '/about/' }
-    // ],
+        { title: 'about', url: '/about/' }
+     ],
     footer: [
         { title: 'rss', url: '/rss.xml/' }
     ]
