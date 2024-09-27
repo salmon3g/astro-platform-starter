@@ -13,7 +13,6 @@ const title = locale === 'en' && FrontMatter['title-en'] ? FrontMatter['title-en
 ---
 
 <Layout title={title} navbar={false}>
-    <a rel="prefetch" class="panda-link mt-6" href={path('/')}>{t('post.back')}</a>
     <style is:inline>
         /* notification */
         .notification p {
@@ -72,34 +71,8 @@ const title = locale === 'en' && FrontMatter['title-en'] ? FrontMatter['title-en
         }
 
     </style>
-    <div class="mt-6">
-        <h1 class="text-4xl">{title}</h1>
-        <div class="flex sm:flex-row flex-col rounded-lg bg-stone-100 dark:bg-stone-600 p-2 px-4">
-            <div>
-                {
-                    FrontMatter.categories &&
-                    FrontMatter.categories.map((category) => (
-                            <span class="ml-2">
-                                <a href={path('/categories/' + category)} class="text-sm mr-2 panda-link">
-                                    #{t('categories.' + category)}#
-                                </a>
-                            </span>
-                    ))
-                }
-            </div>
-            <span class="ml-auto mr-4 text-sm font-normal"> {t('post.post_at')} {formatDateYMD(FrontMatter.pubDate)}</span>
-        </div>
-    </div>
+    <div class="mt-6"><h1 class="text-4xl">{title}</h1></div>
     <article class="prose dark:prose-invert prose-stone max-w-prose mt-6">
         <slot/>
     </article>
-    {
-        FrontMatter.pubDate !== FrontMatter.lastModified && (
-                    <div class="mt-9 flex text-sm font-italic opacity-80">
-                <span class="ml-auto">
-                    {t('post.last_modified_at')} {formatDateYMD(FrontMatter.lastModified)}
-                </span>
-                    </div>
-        )
-    }
 </Layout>
