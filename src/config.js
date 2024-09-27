@@ -1,7 +1,6 @@
 export const PandaConfig = {
-    title: 'Panda Blog',
+    title: 'MyPaper',
     description: 'Panda Blog, a blog powered by Astro',
-    start: '2016',
     site: 'https://mypaper.vercel.app/',
     defaultLocale: 'en',
     navbar: [
