@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, sans-serif;
     overflow-y: scroll;
+    background-color:#FFFBF5
 }
 
 img {
@@ -143,7 +144,7 @@ a.animated.active:after {
     color: rgb(var(--color-primary-main));
     @apply mr-4 font-semibold;
 }
-
+.prose :where(h2):not(:where(.not-prose,.not-prose *)){font-size:1.5rem;color:#333}
 /*
 * footnotes
 */
