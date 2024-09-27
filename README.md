@@ -1,15 +1,94 @@
-# Astro on Netlify Platform Starter
+# Astro Blog Theme: Panda 🐼
 
-[Live Demo](https://astro-platform-starter.netlify.app/)
+```
+git clone https://github.com/yuhangch/astro-theme-panda.git
+```
+## Key Features
 
-A modern starter based on Astro.js, Tailwind, daisyUI, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+- Fast, tiny (~30kb), optimized, and awesome pages
 
-## Astro Commands
+
+##  Project Structure
+
+Inside of panda🐼 project, you'll focus on these folders and files:
+
+```
+/
+├── public/
+├── src/
+│   └── content/
+│       └── posts/
+│   └── config.js
+└── astro.config.mjs
+```
+
+In `config.js`, navigate to `PandaConfig`, you can customize your site for your own needs.
+
+```javascript
+export const PandaConfig = {
+    title: 'Panda Blog',
+    description: 'Panda Blog, a blog powered by Astro',
+    start: '2016',
+    site: 'https://astro-theme-panda.vercel.app/',
+    defaultLocale: 'en',
+    navbar: [
+        // {title: 'Posts', url: '/'}, // auto generated
+        {title: 'about', url: '/about/'},
+    ],
+    footer:[
+        {title: 'rss', url: '/rss/'},
+        {title: 'contact', url: 'https://github.com/yuhangch/astro-theme-panda/issues/new'},
+        {title: 'github', url: 'https://github.com/yuhangch/astro-theme-panda'},
+    ]
+}
+```
+
+## More customization
+
+### Add a new post
+
+- Create a new markdown file in `src/content/posts/` folder
+- Add the following frontmatter to the top of the file:
+
+```markdown
+---
+description: "Your description here"
+pubDate: "2024-03-02"
+tags: ['markdown','example']
+categories: ['tech']
+---
+```
+
+- Write your content below the frontmatter
+
+### Add a new page
+
+- Create a new folder in `src/content/` folder
+- Add an `index.md` file in the new folder
+- Write your content in the `index.md` file
+- Create `your-page-name.astro` in `src/pages/` folder
+- Reference the `src/content/about/about.md` and `src/pages/about.astro` for more details.
+
+
+### Customize the theme
+
+- Update the `src/styles/index.css` file to customize the theme
+- Set `--color-primary-main` and `--color-secondary-main` in `:root` and `:root.dark` to change the theme colors.
+
+
+### Simple language support
+
+- Set defaultLocale in `astro.config.mjs (PandaConfig)` to the language you want to use.
+- If you need lang not `zh` or `en`, you need to add the language file in `src/content/lang/` folder.
+- Reference the `src/locates/en.yml` and `src/utils/locale.ts` for more details.
+
+
+##  Commands
 
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
+| :------------------------ |:-------------------------------------------------|
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
@@ -17,35 +96,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Deploying to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-platform-starter)
+## Roadmap
 
-## Developing Locally
-
-| Prerequisites             |
-| :------------------------ |
-| [Node.js](https://nodejs.org/) v18.14+. |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
-
-1. Clone this repository, then run `npm install` in its root directory.
-
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
-
-```
-npm install netlify-cli@latest -g
-```
-
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
-
-```
-netlify link
-```
-
-4. Then, run the Astro.js development server via Netlify CLI:
-
-```
-netlify dev
-```
-
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+- [ ] The real i18n support.
