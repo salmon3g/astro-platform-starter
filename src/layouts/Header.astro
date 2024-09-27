@@ -1,5 +1,4 @@
 ---
-/* import ThemeIcon from '@components/ThemeIcon.astro' */
 import { useLocale } from '@utils/locale'
 const { path } = useLocale(Astro.url)
 
@@ -8,10 +7,7 @@ export const prerender = true
 
 <div class="my-6 flex">
     <a href={path('/')}  class="hover:cursor-pointer opacity-100 hover:opacity-80 panda-link ">
-        <i class="hidden">website header </i>
-       <h1>Panda Blog</h1>
+        <i class="hidden">MyPaper</i>
+       <h1>MyPaper</h1>
     </a>
-    <!-- div class="text-sm place-content-center inline ml-auto">
-        <ThemeIcon />
-    </div -->
 </div>
