@@ -3,7 +3,7 @@ body {
     overflow-y: scroll;
     background-color:#FFFBF5
 }
-
+h1 .postTitle{font-size:1.25rem}
 img {
     @apply max-w-md mx-h-[20%];
 }

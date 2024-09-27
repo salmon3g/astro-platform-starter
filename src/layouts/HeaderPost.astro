@@ -1,0 +1,13 @@
+---
+import { useLocale } from '@utils/locale'
+const { path } = useLocale(Astro.url)
+
+export const prerender = true
+---
+
+<div class="my-6 flex">
+    <a href={path('/')}  class="hover:cursor-pointer opacity-100 hover:opacity-80 panda-link ">
+        <i class="hidden">MyPaper</i>
+       <h1 clall="postTitle">MyPaper</h1>
+    </a>
+</div>
