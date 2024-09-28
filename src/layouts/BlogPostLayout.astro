@@ -18,4 +18,8 @@ const title = locale === 'en' && FrontMatter['title-en'] ? FrontMatter['title-en
     <article class="prose dark:prose-invert prose-stone max-w-prose mt-6">
         <slot/>
     </article>
+    <div class="mt-9 flex text-sm opacity-80">
+       <span class="ml-auto"><a href={path('/categories/' + category)} class="text-sm mr-2 panda-link">
+  #{t('categories.' + category)}#</a></span>
+    </div>
 </Layout>

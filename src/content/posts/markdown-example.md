@@ -2,7 +2,7 @@
 title: "Basic markdown style guide"
 pubDate: 2024-03-02
 tags: ['markdown']
-slug: 1-2
+slug: [1-2]
 ---
 
 Markdown is powered by [Markdoc](https://markdoc.dev/). This is an example post to demonstrate all the basic markdown syntax. You can author content using the familiar markdown syntax you already know.
