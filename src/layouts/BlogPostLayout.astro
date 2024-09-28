@@ -12,7 +12,7 @@ const {path, t, locale} = useLocale(Astro.url)
 const title = locale === 'en' && FrontMatter['title-en'] ? FrontMatter['title-en'] : FrontMatter['title']
 ---
 
-<Layout title={title} navbar={false}>
+<Layout title={title}>
     <style is:inline>.text-4xl{font-size:1.75rem;margin-top:3.25rem}</style>
     <div class="mt-6"><h1 class="text-4xl">{title}</h1></div>
     <article class="prose dark:prose-invert prose-stone max-w-prose mt-6">
