@@ -15,6 +15,18 @@ const title = locale === 'en' && FrontMatter['title-en'] ? FrontMatter['title-en
 <Layout title={title}>
     <style is:inline>.text-4xl{font-size:1.75rem;margin-top:3.25rem}</style>
     <div class="mt-6"><h1 class="text-4xl">{title}</h1></div>
+    <div>
+                {
+                    FrontMatter.categories &&
+                    FrontMatter.categories.map((category) => (
+                            <span class="ml-2">
+                                <a href={path('/categories/' + category)} class="text-sm mr-2 panda-link">
+                                    #{t('categories.' + category)}#
+                                </a>
+                            </span>
+                    ))
+                }
+            </div>
     <article class="prose dark:prose-invert prose-stone max-w-prose mt-6">
         <slot/>
     </article>
